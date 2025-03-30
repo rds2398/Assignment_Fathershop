@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.spinner {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border-top: 2rem;
+  border-bottom: 2rem;
+  border: 9px solid #f1f2ff;
+  animation: spinner-oaa3wk 1.6s infinite linear;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
